@@ -3,16 +3,16 @@ import ItemsCarousel from "react-items-carousel";
 import ImageViewer from "react-simple-image-viewer";
 import "./Projects.css";
 //img imports
-import stl1 from "../../assets/stlbundles/1.png";
-import stl2 from "../../assets/stlbundles/2.png";
-import stl3 from "../../assets/stlbundles/3.png";
-import stl4 from "../../assets/stlbundles/4.png";
-import stl5 from "../../assets/stlbundles/5.png";
-import stl6 from "../../assets/stlbundles/6.png";
-import stl7 from "../../assets/stlbundles/7.png";
-import stl8 from "../../assets/stlbundles/8.png";
-import stl9 from "../../assets/stlbundles/9.png";
-import stl10 from "../../assets/stlbundles/10.png";
+import stl1 from "../../assets/stlbundles/1.jpg";
+import stl2 from "../../assets/stlbundles/2.jpg";
+import stl3 from "../../assets/stlbundles/3.jpg";
+import stl4 from "../../assets/stlbundles/4.jpg";
+import stl5 from "../../assets/stlbundles/5.jpg";
+import stl6 from "../../assets/stlbundles/6.jpg";
+import stl7 from "../../assets/stlbundles/7.jpg";
+import stl8 from "../../assets/stlbundles/8.jpg";
+import stl9 from "../../assets/stlbundles/9.jpg";
+import stl10 from "../../assets/stlbundles/10.jpg";
 
 function STLBundles() {
   const [activeItemIndex, setActiveItemIndex] = useState(0);

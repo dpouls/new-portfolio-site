@@ -3,28 +3,21 @@ import ItemsCarousel from "react-items-carousel";
 import ImageViewer from "react-simple-image-viewer";
 import "./Projects.css";
 //img imports
-import bc1 from "../../assets/bc/1.png";
-import bc2 from "../../assets/bc/2.png";
-import bc3 from "../../assets/bc/3.png";
-import bc4 from "../../assets/bc/4.png";
-import bc5 from "../../assets/bc/5.png";
-import bca1 from "../../assets/bc/a1.png";
-import bca2 from "../../assets/bc/a2.png";
-import bca3 from "../../assets/bc/a3.png";
-import bca4 from "../../assets/bc/a4.png";
-import bcapp1 from "../../assets/bc/bc_app/1.png";
-import bcapp2 from "../../assets/bc/bc_app/2.png";
-import bcapp3 from "../../assets/bc/bc_app/3.png";
-import bcapp4 from "../../assets/bc/bc_app/4.png";
-import bcapp5 from "../../assets/bc/bc_app/5.png";
-import bcapp6 from "../../assets/bc/bc_app/6.png";
-
-
-
-
-
-
-
+import bc1 from "../../assets/bc/1.jpg";
+import bc2 from "../../assets/bc/2.jpg";
+import bc3 from "../../assets/bc/3.jpg";
+import bc4 from "../../assets/bc/4.jpg";
+import bc5 from "../../assets/bc/5.jpg";
+import bca1 from "../../assets/bc/a1.jpg";
+import bca2 from "../../assets/bc/a2.jpg";
+import bca3 from "../../assets/bc/a3.jpg";
+import bca4 from "../../assets/bc/a4.jpg";
+import bcapp1 from "../../assets/bc/bc_app/1.jpg";
+import bcapp2 from "../../assets/bc/bc_app/2.jpg";
+import bcapp3 from "../../assets/bc/bc_app/3.jpg";
+import bcapp4 from "../../assets/bc/bc_app/4.jpg";
+import bcapp5 from "../../assets/bc/bc_app/5.jpg";
+import bcapp6 from "../../assets/bc/bc_app/6.jpg";
 
 function BridgeCore() {
   const [activeItemIndex, setActiveItemIndex] = useState(0);
@@ -41,17 +34,16 @@ function BridgeCore() {
   }, [viewerIsOpen, appViewerIsOpen]);
   const bcImages = [
     { src: bc1, alt: "Project 1 Image 1" },
-  
+
     { src: bc2, alt: "Project 1 Image 2" },
     { src: bc3, alt: "Project 1 Image 3" },
     { src: bc4, alt: "Project 1 Image 4" },
     { src: bc5, alt: "Project 1 Image 5" },
-  {src: bca1, alt: "Project 1 Image 6"},  
-  {src: bca2, alt: "Project 1 Image 7"},
-  {src: bca3, alt: "Project 1 Image 8"},
-  {src: bca4, alt: "Project 1 Image 9"},
-
-  ]
+    { src: bca1, alt: "Project 1 Image 6" },
+    { src: bca2, alt: "Project 1 Image 7" },
+    { src: bca3, alt: "Project 1 Image 8" },
+    { src: bca4, alt: "Project 1 Image 9" },
+  ];
   const bcAppImages = [
     { src: bcapp1, alt: "Project 1 App Image 1" },
     { src: bcapp2, alt: "Project 1 App Image 2" },
@@ -62,7 +54,7 @@ function BridgeCore() {
   ];
 
   return (
-    <div id='projects' class="content-section">
+    <div id="projects" class="content-section">
       <h1>SOFTWARE PROJECTS</h1>
       <p>
         I've been working on a variety of projects over the years. Here are a
