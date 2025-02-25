@@ -9,9 +9,9 @@ export function Home({ path }) {
   return (
     <div class="home">
       <Intro />
-
+{/* 
       <BridgeCore />
-      <STLBundles />
+      <STLBundles /> */}
     </div>
   );
 }

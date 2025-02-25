@@ -1,6 +1,6 @@
 import "./Intro.css";
 import { useState } from "preact/hooks";
-import dallinWiz from "../../assets/dallin-wizard.png";
+import dallinWiz from "../../assets/dallin-wizard.jpg";
 import dallin from "../../assets/dallin.jpg";
 
 function Intro() {
@@ -26,6 +26,7 @@ function Intro() {
         As a full-stack developer, I work with React, Node.js, and PostgreSQL to
         craft digital spells that make technology feel effortless.
       </p>
+      <a href="/projects" style={{color: '#1974D0'}}>See my projects!</a>
     </div>
   );
 }

@@ -1,23 +1,24 @@
 import { useState, useEffect } from "react";
-import ItemsCarousel from "react-items-carousel";
+import { lazy } from "preact-iso";
+const ItemsCarousel = lazy(() => import("react-items-carousel"));
 import ImageViewer from "react-simple-image-viewer";
 import "./Projects.css";
 //img imports
-import bc1 from "../../assets/bc/1.jpg";
-import bc2 from "../../assets/bc/2.jpg";
-import bc3 from "../../assets/bc/3.jpg";
-import bc4 from "../../assets/bc/4.jpg";
-import bc5 from "../../assets/bc/5.jpg";
-import bca1 from "../../assets/bc/a1.jpg";
-import bca2 from "../../assets/bc/a2.jpg";
-import bca3 from "../../assets/bc/a3.jpg";
-import bca4 from "../../assets/bc/a4.jpg";
-import bcapp1 from "../../assets/bc/bc_app/1.jpg";
-import bcapp2 from "../../assets/bc/bc_app/2.jpg";
-import bcapp3 from "../../assets/bc/bc_app/3.jpg";
-import bcapp4 from "../../assets/bc/bc_app/4.jpg";
-import bcapp5 from "../../assets/bc/bc_app/5.jpg";
-import bcapp6 from "../../assets/bc/bc_app/6.jpg";
+import bc1 from "../../assets/bc/1-min.jpg";
+import bc2 from "../../assets/bc/2-min.jpg";
+import bc3 from "../../assets/bc/3-min.jpg";
+import bc4 from "../../assets/bc/4-min.jpg";
+import bc5 from "../../assets/bc/5-min.jpg";
+import bca1 from "../../assets/bc/a1-min.jpg";
+import bca2 from "../../assets/bc/a2-min.jpg";
+import bca3 from "../../assets/bc/a3-min.jpg";
+import bca4 from "../../assets/bc/a4-min.jpg";
+import bcapp1 from "../../assets/bc/bc_app/1-min.jpg";
+import bcapp2 from "../../assets/bc/bc_app/2-min.jpg";
+import bcapp3 from "../../assets/bc/bc_app/3-min.jpg";
+import bcapp4 from "../../assets/bc/bc_app/4-min.jpg";
+import bcapp5 from "../../assets/bc/bc_app/5-min.jpg";
+import bcapp6 from "../../assets/bc/bc_app/6-min.jpg";
 
 function BridgeCore() {
   const [activeItemIndex, setActiveItemIndex] = useState(0);
@@ -93,7 +94,7 @@ function BridgeCore() {
                   class="bc-img zoom"
                   src={image.src}
                   alt={image.alt}
-                  loading='lazy'
+                  loading="lazy"
                   onClick={() => setViewerIsOpen(true)}
                 />
               );
@@ -173,7 +174,7 @@ function BridgeCore() {
                     class="bc-app-img zoom"
                     src={image.src}
                     alt={image.alt}
-                    loading='lazy'
+                    loading="lazy"
                     onClick={() => setAppViewerIsOpen(true)}
                   />
                 );

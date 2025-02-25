@@ -8,10 +8,10 @@ import {
 } from "preact-iso";
 import { Home } from "./pages/Home/index.jsx";
 import { NotFound } from "./pages/_404.jsx";
-import Contact from "./components/Contact/Contact.jsx";
+const Contact  = lazy(() => import("./components/Contact/Contact.jsx"));
 import Header from "./components/Header/Header.jsx";
 import "./style.css";
-import Projects from "./components/Projects/Projects.jsx";
+const Projects = lazy(() => import("./components/Projects/Projects.jsx"));
 
 export function App() {
   return (

@@ -1,18 +1,19 @@
 import { useState, useEffect } from "react";
-import ItemsCarousel from "react-items-carousel";
+import { lazy } from "preact-iso";
+const ItemsCarousel = lazy(() => import("react-items-carousel"));
 import ImageViewer from "react-simple-image-viewer";
 import "./Projects.css";
 //img imports
-import stl1 from "../../assets/stlbundles/1.jpg";
-import stl2 from "../../assets/stlbundles/2.jpg";
-import stl3 from "../../assets/stlbundles/3.jpg";
-import stl4 from "../../assets/stlbundles/4.jpg";
-import stl5 from "../../assets/stlbundles/5.jpg";
-import stl6 from "../../assets/stlbundles/6.jpg";
-import stl7 from "../../assets/stlbundles/7.jpg";
-import stl8 from "../../assets/stlbundles/8.jpg";
-import stl9 from "../../assets/stlbundles/9.jpg";
-import stl10 from "../../assets/stlbundles/10.jpg";
+import stl1 from "../../assets/stlbundles/1-min.jpg";
+import stl2 from "../../assets/stlbundles/2-min.jpg";
+import stl3 from "../../assets/stlbundles/3-min.jpg";
+import stl4 from "../../assets/stlbundles/4-min.jpg";
+import stl5 from "../../assets/stlbundles/5-min.jpg";
+import stl6 from "../../assets/stlbundles/6-min.jpg";
+import stl7 from "../../assets/stlbundles/7-min.jpg";
+import stl8 from "../../assets/stlbundles/8-min.jpg";
+import stl9 from "../../assets/stlbundles/9-min.jpg";
+import stl10 from "../../assets/stlbundles/10-min.jpg";
 
 function STLBundles() {
   const [activeItemIndex, setActiveItemIndex] = useState(0);
@@ -73,7 +74,7 @@ function STLBundles() {
                 key={i}
                 src={img}
                 class="stl-img zoom"
-                loading='lazy'
+                loading="lazy"
                 alt={`STLBundles Image ${i + 1}`}
                 onClick={() => setViewerIsOpen(true)}
               />
