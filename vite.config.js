@@ -9,5 +9,8 @@ export default defineConfig({
     build: {
         outDir: "dist", // Default output directory for Netlify
         sourcemap: true, // Useful for debugging
+		rollupOptions: {
+			external: ['@rollup/rollup-linux-x64-gnu']
+		  }
     },
 });
