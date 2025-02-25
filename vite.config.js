@@ -14,4 +14,8 @@ export default defineConfig({
 			},
 		}),
 	],
+	build: {
+		outDir: "dist", // Default output directory for Netlify
+		sourcemap: true, // Useful for debugging
+	  },
 });
