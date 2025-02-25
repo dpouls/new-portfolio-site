@@ -1,13 +1,25 @@
 import { useState, useEffect } from "react";
 import ItemsCarousel from "react-items-carousel";
-import ImageViewer from 'react-simple-image-viewer';
+import ImageViewer from "react-simple-image-viewer";
 import "./Projects.css";
+//img imports
+import stl1 from "../../assets/stlbundles/1.png";
+import stl2 from "../../assets/stlbundles/2.png";
+import stl3 from "../../assets/stlbundles/3.png";
+import stl4 from "../../assets/stlbundles/4.png";
+import stl5 from "../../assets/stlbundles/5.png";
+import stl6 from "../../assets/stlbundles/6.png";
+import stl7 from "../../assets/stlbundles/7.png";
+import stl8 from "../../assets/stlbundles/8.png";
+import stl9 from "../../assets/stlbundles/9.png";
+import stl10 from "../../assets/stlbundles/10.png";
+
 function STLBundles() {
   const [activeItemIndex, setActiveItemIndex] = useState(0);
   const chevronWidth = 40;
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
   useEffect(() => {
-    if (viewerIsOpen ) {
+    if (viewerIsOpen) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "";
@@ -15,16 +27,16 @@ function STLBundles() {
   }, [viewerIsOpen]);
 
   const stlBundlesImages = [
-    "/src/assets/stlbundles/1.png",
-    "/src/assets/stlbundles/2.png",
-    "/src/assets/stlbundles/3.png",
-    "/src/assets/stlbundles/4.png",
-    "/src/assets/stlbundles/5.png",
-    "/src/assets/stlbundles/6.png",
-    "/src/assets/stlbundles/7.png",
-    "/src/assets/stlbundles/8.png",
-    "/src/assets/stlbundles/9.png",
-    "/src/assets/stlbundles/10.png",
+    stl1,
+    stl2,
+    stl3,
+    stl4,
+    stl5,
+    stl6,
+    stl7,
+    stl8,
+    stl9,
+    stl10,
   ];
   return (
     <div class="content-section">
@@ -38,7 +50,6 @@ function STLBundles() {
         </a>
         {viewerIsOpen && (
           <ImageViewer
-
             src={stlBundlesImages.map((image) => image)}
             currentIndex={activeItemIndex}
             disableScroll={false}

@@ -2,6 +2,30 @@ import { useState, useEffect } from "react";
 import ItemsCarousel from "react-items-carousel";
 import ImageViewer from "react-simple-image-viewer";
 import "./Projects.css";
+//img imports
+import bc1 from "../../assets/bc/1.png";
+import bc2 from "../../assets/bc/2.png";
+import bc3 from "../../assets/bc/3.png";
+import bc4 from "../../assets/bc/4.png";
+import bc5 from "../../assets/bc/5.png";
+import bca1 from "../../assets/bc/a1.png";
+import bca2 from "../../assets/bc/a2.png";
+import bca3 from "../../assets/bc/a3.png";
+import bca4 from "../../assets/bc/a4.png";
+import bcapp1 from "../../assets/bc/bc_app/1.png";
+import bcapp2 from "../../assets/bc/bc_app/2.png";
+import bcapp3 from "../../assets/bc/bc_app/3.png";
+import bcapp4 from "../../assets/bc/bc_app/4.png";
+import bcapp5 from "../../assets/bc/bc_app/5.png";
+import bcapp6 from "../../assets/bc/bc_app/6.png";
+
+
+
+
+
+
+
+
 function BridgeCore() {
   const [activeItemIndex, setActiveItemIndex] = useState(0);
   const [appActiveItemIndex, setAppActiveItemIndex] = useState(0);
@@ -16,23 +40,25 @@ function BridgeCore() {
     }
   }, [viewerIsOpen, appViewerIsOpen]);
   const bcImages = [
-    { src: "/src/assets/bc/1.png", alt: "Project 1 Image 1" },
-    { src: "/src/assets/bc/2.png", alt: "Project 1 Image 2" },
-    { src: "/src/assets/bc/3.png", alt: "Project 1 Image 3" },
-    { src: "/src/assets/bc/4.png", alt: "Project 1 Image 4" },
-    { src: "/src/assets/bc/5.png", alt: "Project 1 Image 5" },
-    { src: "/src/assets/bc/a1.png", alt: "Project 1 Image 6" },
-    { src: "/src/assets/bc/a2.png", alt: "Project 1 Image 7" },
-    { src: "/src/assets/bc/a3.png", alt: "Project 1 Image 8" },
-    { src: "/src/assets/bc/a4.png", alt: "Project 1 Image 9" },
-  ];
+    { src: bc1, alt: "Project 1 Image 1" },
+  
+    { src: bc2, alt: "Project 1 Image 2" },
+    { src: bc3, alt: "Project 1 Image 3" },
+    { src: bc4, alt: "Project 1 Image 4" },
+    { src: bc5, alt: "Project 1 Image 5" },
+  {src: bca1, alt: "Project 1 Image 6"},  
+  {src: bca2, alt: "Project 1 Image 7"},
+  {src: bca3, alt: "Project 1 Image 8"},
+  {src: bca4, alt: "Project 1 Image 9"},
+
+  ]
   const bcAppImages = [
-    { src: "/src/assets/bc/bc_app/1.png", alt: "Project 1 Image 1" },
-    { src: "/src/assets/bc/bc_app/2.png", alt: "Project 1 Image 2" },
-    { src: "/src/assets/bc/bc_app/3.png", alt: "Project 1 Image 3" },
-    { src: "/src/assets/bc/bc_app/4.png", alt: "Project 1 Image 4" },
-    { src: "/src/assets/bc/bc_app/5.png", alt: "Project 1 Image 5" },
-    { src: "/src/assets/bc/bc_app/6.png", alt: "Project 1 Image 6" },
+    { src: bcapp1, alt: "Project 1 App Image 1" },
+    { src: bcapp2, alt: "Project 1 App Image 2" },
+    { src: bcapp3, alt: "Project 1 App Image 3" },
+    { src: bcapp4, alt: "Project 1 App Image 4" },
+    { src: bcapp5, alt: "Project 1 App Image 5" },
+    { src: bcapp6, alt: "Project 1 App Image 6" },
   ];
 
   return (
