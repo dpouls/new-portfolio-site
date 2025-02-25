@@ -73,6 +73,7 @@ function STLBundles() {
                 key={i}
                 src={img}
                 class="stl-img zoom"
+                loading='lazy'
                 alt={`STLBundles Image ${i + 1}`}
                 onClick={() => setViewerIsOpen(true)}
               />

@@ -93,6 +93,7 @@ function BridgeCore() {
                   class="bc-img zoom"
                   src={image.src}
                   alt={image.alt}
+                  loading='lazy'
                   onClick={() => setViewerIsOpen(true)}
                 />
               );
@@ -172,6 +173,7 @@ function BridgeCore() {
                     class="bc-app-img zoom"
                     src={image.src}
                     alt={image.alt}
+                    loading='lazy'
                     onClick={() => setAppViewerIsOpen(true)}
                   />
                 );
