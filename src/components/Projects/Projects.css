@@ -5,6 +5,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: #000;
+  width: 100%;
   
 }
 
@@ -42,4 +44,15 @@
 }
 .bc-app-carousel {
    max-width: 400px;
+}
+
+@media (max-width: 800px) {
+  .bc-features-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .bc-features, .bc-app-carousel {
+    width: 100%;
+    max-width: 100%;
+  }
 }

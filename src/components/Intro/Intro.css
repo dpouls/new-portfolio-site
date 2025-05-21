@@ -1,15 +1,16 @@
 #profile-img {
   opacity: 1;
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   /* width: 20%; */
   object-fit: cover;
   border-radius: 50%;
+  margin-bottom: 20px;
 }
 
 .title {
   display: block;
-  font-size: 4em;
+  font-size: 3em;
   text-align: center;
   font-family: "Josefin Sans", sans-serif;
   /* margin-top: 30px; */
@@ -22,9 +23,35 @@
   display: block;
   font-family: "Poppins";
   /* width: 100%; */
-  max-width: 500px;
+  max-width: 600px;
   text-align: center;
-  margin: 10px;
-  font-size: 1.2em;
+  margin: 10px auto;
+  font-size: 1.1em;
   opacity: 1;
+  line-height: 1.5;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background-color: rgba(238, 238, 238, 0.875);
+  padding: 30px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 85%;
+  max-width: 800px;
+}
+
+.intro a {
+  margin-top: 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.intro a:hover {
+  color: #145a9e;
 }

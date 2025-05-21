@@ -65,10 +65,12 @@ body {
   background-color: rgba(238, 238, 238, 0.875);
   padding: 40px;
   padding-top: 60px;
-  margin: 20px;
+  /* margin: 20px; */
+  box-sizing: border-box;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  width: 85%;
+  width: 95%;
+  margin: 20px 0px;
 }
 
 .project {
@@ -143,9 +145,19 @@ main {
 		background-color: #1a1a1a;
 	}
 } */
+
 .pointer {
   cursor: pointer;
 }
 .zoom {
   cursor: zoom-in;
 }
+@media (max-width: 800px) {
+  .project {
+    text-align: left;
+  }
+  .project-description {
+    text-align: left;
+  }
+}
+

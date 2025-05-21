@@ -21,9 +21,9 @@ export function App() {
           <Header />
           <Router>
             <Home path="/" />
-
             <Route path="/contact" component={Contact} />
             <Route path="/projects" component={Projects} />
+            <Route default component={NotFound} />
           </Router>
         </ErrorBoundary>
       </LocationProvider>
