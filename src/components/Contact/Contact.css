@@ -51,3 +51,34 @@
   background-color: #145a9e;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #1872CE;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-3px);
+  color: #145a9e;
+}
+
+.social-icon {
+  font-size: 2.5em;
+  margin-bottom: 8px;
+}
+
+.social-label {
+  font-size: 0.9em;
+  font-weight: 500;
+}

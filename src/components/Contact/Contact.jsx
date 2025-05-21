@@ -2,6 +2,7 @@ import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
 import Swal from "sweetalert2";
+
 const ContactUs = (path) => {
   console.log('path', path);
   const form = useRef(null);
@@ -44,6 +45,22 @@ const ContactUs = (path) => {
     <div class="home">
       <div class="contact">
         <h1 style={{ color: "#1872CE" }}>Contact Me</h1>
+        
+        <div class="social-links">
+          <a href="https://github.com/dpouls" target="_blank" rel="noopener noreferrer" class="social-link">
+            <i class="social-icon">📦</i>
+            <span class="social-label">GitHub</span>
+          </a>
+          <a href="https://linkedin.com/in/dallin-poulson" target="_blank" rel="noopener noreferrer" class="social-link">
+            <i class="social-icon">💼</i>
+            <span class="social-label">LinkedIn</span>
+          </a>
+          <a href="mailto:dallinpoulson@gmail.com" class="social-link">
+            <i class="social-icon">✉️</i>
+            <span class="social-label">Email</span>
+          </a>
+        </div>
+
         <form ref={form} onSubmit={sendEmail} className="contact-form">
           <div
             style={{
