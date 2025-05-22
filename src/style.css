@@ -159,6 +159,9 @@ main {
   .project-description {
     text-align: left;
   }
+  .carousel-container {
+    width: 100%;
+  }
 }
 
 .app-container {
