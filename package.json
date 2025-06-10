@@ -16,6 +16,7 @@
     "sweetalert2": "^11.17.2"
   },
   "devDependencies": {
+    "@babel/plugin-syntax-jsx": "^7.27.1",
     "@preact/preset-vite": "^2.9.3",
     "eslint": "^8.57.1",
     "eslint-config-preact": "^1.5.0",

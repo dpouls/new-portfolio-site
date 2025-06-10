@@ -24,8 +24,7 @@ html {
 	color: #000;
 }
 body {
-	background: linear-gradient(to bottom,  rgb(15, 15, 154),rgb(181, 240, 244),rgb(57, 168, 57));
-	margin: 0;
+	background: linear-gradient(to bottom,  rgb(15, 15, 154),rgb(181, 240, 244));
 	
 }
 #app {
